@@ -7,6 +7,8 @@ Webhooks are how services notify each other of events. At their core they are ju
 
 This minimal Flask application serves as an illustration of what your webhook endpoint has to do. For incoming `items.scanned` events, this app verifies the payload using the request headers and your endpoint ***secret***. We also illustrate how you can use the webhook's item IDs to gather information about the incoming scanned objects using the Dimmy API. 
 
+Note that this process is similar for languages other than Python. For payload verification in other languages, please refer to their excellent [documentation](https://docs.svix.com/receiving/verifying-payloads/how).
+
 ## Setting up webhooks 
 To set up webhooks, you will need to navigate to the ***Webhook Dashboard***, which is accessible through ***Account & Limits*** in the [Dimmy Webapp](https://dimmy.app.optioryx.com/settings/account).
 

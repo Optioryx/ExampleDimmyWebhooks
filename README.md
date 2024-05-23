@@ -22,9 +22,9 @@ You can click the "Add Endpoint" button to add your new endpoint. In production,
 ```
 python main.py
 ``` 
-Assuming our application is running on `http://127.0.0.1:5000` (should be visible in the output of the above command), we can run 
+Assuming our application is running on `http://127.0.0.1:5000` (should be visible in the output of the above command) and your webhook endpoint lives at `/webhook` (which is the case in this example), we can run 
 ```
-svix listen http://127.0.0.1:5000
+svix listen http://127.0.0.1:5000/webhook
 ```
 From the output of this command, we can find a webhook URL that will redirect any callbacks to our local machine.
 

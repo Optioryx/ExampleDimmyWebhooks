@@ -30,7 +30,7 @@ From the output of this command, we can find a webhook URL that will redirect an
 
 ![Forward](/img/svix_forward.png)
 
-In the "Add Endpoint" screen that we navigated to earlier, we can now fill in the relay URL and select the event types that we will be listening to (in this case `items.scanned`).
+In the "Add Endpoint" screen that we navigated to earlier, we can now fill in the relay URL and select the event types that we will be listening to (in this case `items.scanned`, but you can also listen to `item.scanned.full_payload` to receive the entire item instead of only the ID).
 
 ![Forward](/img/svix_endpoint_create.png)
 
